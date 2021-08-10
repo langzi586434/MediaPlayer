@@ -1,0 +1,45 @@
+com/example/mediatest/commit/Comment.java
+ com.example.mediatest.commit.Comment
+com/example/mediatest/play/VideoPlayerActivity.java
+ com.example.mediatest.play.VideoPlayerActivity
+ com.example.mediatest.play.VideoPlayerActivity$1
+ com.example.mediatest.play.VideoPlayerActivity$2
+ com.example.mediatest.play.VideoPlayerActivity$3
+ com.example.mediatest.play.VideoPlayerActivity$4
+com/example/mediatest/base/BaseActivity.java
+ com.example.mediatest.base.BaseActivity
+com/example/mediatest/play/MusicPlayerActivity.java
+ com.example.mediatest.play.MusicPlayerActivity
+ com.example.mediatest.play.MusicPlayerActivity$1
+ com.example.mediatest.play.MusicPlayerActivity$2
+ com.example.mediatest.play.MusicPlayerActivity$3
+ com.example.mediatest.play.MusicPlayerActivity$4
+com/example/mediatest/service/MediaSessionService.java
+ com.example.mediatest.service.MediaSessionService
+ com.example.mediatest.service.MediaSessionService$1
+ com.example.mediatest.service.MediaSessionService$2
+ com.example.mediatest.service.MediaSessionService$3
+com/example/mediatest/adapter/PlayAdapter.java
+ com.example.mediatest.adapter.PlayAdapter
+ com.example.mediatest.adapter.PlayAdapter$1
+ com.example.mediatest.adapter.PlayAdapter$ViewHolder
+ com.example.mediatest.adapter.PlayAdapter$onAdapterClickInterface
+com/example/mediatest/BuildConfig.java
+ com.example.mediatest.BuildConfig
+com/example/mediatest/utils/receiver/USBReceiver.java
+ com.example.mediatest.utils.receiver.USBReceiver
+com/example/mediatest/MainActivity.java
+ com.example.mediatest.MainActivity
+ com.example.mediatest.MainActivity$1
+com/example/mediatest/commit/FilesCom.java
+ com.example.mediatest.commit.FilesCom
+com/example/mediatest/utils/VMFileUtils.java
+ com.example.mediatest.utils.VMFileUtils
+ com.example.mediatest.utils.VMFileUtils$1
+com/example/mediatest/base/BaseMediaActivity.java
+ com.example.mediatest.base.BaseMediaActivity
+ com.example.mediatest.base.BaseMediaActivity$1
+ com.example.mediatest.base.BaseMediaActivity$2
+ com.example.mediatest.base.BaseMediaActivity$3
+ com.example.mediatest.base.BaseMediaActivity$4
+ com.example.mediatest.base.BaseMediaActivity$5

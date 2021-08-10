@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mus.jpg.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-hdpi\\mus.jpg"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_back.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-mdpi\\back.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_back.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-hdpi\\back.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_next.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-hdpi\\next.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\layout_adapter_play_item_layout.xml.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\layout\\adapter_play_item_layout.xml"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_back.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-xhdpi\\back.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable_down.gif.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable\\down.gif"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_back.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-xxhdpi\\back.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\layout_play_video_layout.xml.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\layout\\play_video_layout.xml"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_play.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-mdpi\\play.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_next.xml.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-anydpi\\next.xml"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_back.xml.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-anydpi\\back.xml"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_play.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-xhdpi\\play.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_play.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-xxhdpi\\play.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\layout_play_music_layout.xml.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\layout\\play_music_layout.xml"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_play.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-hdpi\\play.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_next.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-xhdpi\\next.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_next.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-mdpi\\next.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_next.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-xxhdpi\\next.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Android pak\\MediaTest b\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_play.xml.flat",
+        "source": "D:\\Android pak\\MediaTest b\\app\\src\\main\\res\\drawable-anydpi\\play.xml"
+    }
+]
