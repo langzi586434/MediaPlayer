@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MediaTest</string>
+    <string name="rCodec">软解码</string>
+    <string name="yCodec">硬解码</string>
+    <string name="start">start</string>
+    <string name="end">end</string>
+    <string name="todo">TODO</string>
+</resources>

@@ -1,0 +1,9 @@
+rootProject.name = "My Application"
+include ':app'
+include ':mainModule'
+include ':baseModule'
+include ':mediaModule'
+include ':utileModule'
+include ':commontModule'
+include ':settingModule'
+include ':httpModule'

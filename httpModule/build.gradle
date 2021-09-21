@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.versions.compileSdkVersion
+    buildToolsVersion rootProject.ext.versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.versions.minSdkVersion
+        targetSdkVersion rootProject.ext.versions.targetSdkVersion
+        versionCode rootProject.ext.versions.versionCode
+        versionName rootProject.ext.versions.versionName
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation project(':commontModule')
+    implementation project(':utileModule')
+
+    implementation rootProject.ext.dependenciesJAR.gson
+    implementation rootProject.ext.dependenciesJAR.okhttp
+    implementation rootProject.ext.dependenciesJAR.logging
+    implementation rootProject.ext.dependenciesJAR.retrofit
+    implementation rootProject.ext.dependenciesJAR.adapterRxjava
+    implementation rootProject.ext.dependenciesJAR.retrofit2Gson
+    implementation rootProject.ext.dependenciesJAR.rxandroid
+    implementation rootProject.ext.dependenciesJAR.rxjava
+    implementation rootProject.ext.dependenciesJAR.appcompat
+    implementation rootProject.ext.dependenciesJAR.material
+    implementation rootProject.ext.dependenciesJAR.constraintlayout
+    testImplementation rootProject.ext.dependenciesJAR.junit
+    androidTestImplementation rootProject.ext.dependenciesJAR.extJunit
+    androidTestImplementation rootProject.ext.dependenciesJAR.espressoCore
+}

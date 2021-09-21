@@ -1,0 +1,61 @@
+ext {
+    isModel = true
+    versions = [
+            buildToolsVersion: "30.0.3",
+            compileSdkVersion: 30,
+            minSdkVersion    : 28,
+            targetSdkVersion : 30,
+            versionCode      : 1,
+            versionName      : "1.0.0",
+            applicationId    : "com.example.myapplication"
+    ]
+    moduleID = [
+            mainApplicationID   : "com.example.mainModel",
+            settingApplicationID: "com.example.settingModel",
+            mediaApplicationID  : "com.example.mediaModel"
+    ]
+    JarVersions = [
+            appcompatVerison       : "1.2.0",
+            materialVerison        : "1.2.1",
+            junitVerison           : "4.13.2",
+            extjunitVerison        : "1.1.2",
+            espressoVerison        : "3.3.0",
+            constraintlayoutVersion: "2.0.1",
+            gsonVersion            : "2.8.0",
+            okhttpVersion          : "3.9.1",
+            loggingVersion         : "3.9.1",
+            retrofitVersion        : "2.3.0",
+            adapterRxjavaVersion   : "2.1.0",
+            retrofit2GsonVersion   : "2.1.0",
+            rxandroidVersion       : "1.2.1",
+            rxjavaVersion          : "1.2.1",
+            playServicesCastVersion: "19.0.0"
+    ]
+    dependenciesJAR = [
+            //(gson生成和解析库)
+            "gson"            : "com.google.code.gson:gson:${JarVersions["gsonVersion"]}",
+            //(开源的网络请求库)
+            "okhttp"          : "com.squareup.okhttp3:okhttp:${JarVersions["okhttpVersion"]}",
+            //(支持okhttp跟踪到一个网络请求的所有状态，包括请求头、请求体、响应行、 响应体,方便调试)
+            "logging"         : "com.squareup.okhttp3:logging-interceptor:${JarVersions["loggingVersion"]}",
+            //(实现将HTTP请求转换为Java接口)
+            "retrofit"        : "com.squareup.retrofit2:retrofit:${JarVersions["retrofitVersion"]}",
+            //(配合Rxjava 使用)
+            "adapterRxjava"   : "com.squareup.retrofit2:adapter-rxjava:${JarVersions["adapterRxjavaVersion"]}",
+            //(转换器，请求结果转换成Model)
+            "retrofit2Gson"   : "com.squareup.retrofit2:converter-gson:${JarVersions["retrofit2GsonVersion"]}",
+            "rxandroid"       : "io.reactivex:rxandroid:${JarVersions["rxandroidVersion"]}",
+            //(一种帮助你做异步的框架. 类似于 AsyncTask. 但其灵活性和扩展性远远强于前者. 从能力上讲, 如果说 AsycnTask 是 DOS 操作系统, RxJava 是 Window 操作系统。)
+            "rxjava"          : "io.reactivex:rxjava:${JarVersions["rxjavaVersion"]}",
+
+
+
+            "playServicesCast": "com.google.android.gms:play-services-cast:${JarVersions["playServicesCastVersion"]}",
+            "appcompat"       : "androidx.appcompat:appcompat:${JarVersions["appcompatVerison"]}",
+            "material"        : "com.google.android.material:material:${JarVersions["appcompatVerison"]}",
+            "junit"           : "junit:junit:${JarVersions["junitVerison"]}",
+            "extJunit"        : "androidx.test.ext:junit:${JarVersions["extjunitVerison"]}",
+            "espressoCore"    : "androidx.test.espresso:espresso-core:${JarVersions["espressoVerison"]}",
+            "constraintlayout": "androidx.constraintlayout:constraintlayout:${JarVersions["constraintlayoutVersion"]}"
+    ]
+}
