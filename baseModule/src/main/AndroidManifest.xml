@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.example.basemodule"/>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.basemodule"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity android:name=".base.mvp.v.HBaseActivity"
+            tools:ignore="Instantiatable" />
+    </application>
+</manifest>

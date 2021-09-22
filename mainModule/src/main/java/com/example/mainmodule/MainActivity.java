@@ -1,31 +1,35 @@
 package com.example.mainmodule;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
-import android.content.res.XmlResourceParser;
-import android.os.Bundle;
-import android.text.TextUtils;
-import android.util.Log;
-import android.util.Xml;
+import android.content.Intent;
 import android.view.View;
-import android.view.ViewGroup;
 
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
+import com.example.basemodule.base.BaseActivity;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
-public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "MainActivity";
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void initView() {
+
+    }
+
+    @Override
+    protected void initData() {
+
+    }
+
+    @Override
+    protected int setLayout() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    public void onClick(View view) {
+        startActivity(new Intent(this,MainBActivity.class));
+//        super.onClick(view);
+
+
     }
 }

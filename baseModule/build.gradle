@@ -38,6 +38,7 @@ android {
 dependencies {
     implementation project(':utileModule')
     implementation project(':commontModule')
+    implementation project(':httpModule')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation rootProject.ext.dependenciesJAR.playServicesCast

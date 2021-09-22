@@ -28,14 +28,14 @@ dependencies {
     implementation project(':commontModule')
     implementation project(':utileModule')
 
-    implementation rootProject.ext.dependenciesJAR.gson
-    implementation rootProject.ext.dependenciesJAR.okhttp
-    implementation rootProject.ext.dependenciesJAR.logging
-    implementation rootProject.ext.dependenciesJAR.retrofit
-    implementation rootProject.ext.dependenciesJAR.adapterRxjava
-    implementation rootProject.ext.dependenciesJAR.retrofit2Gson
-    implementation rootProject.ext.dependenciesJAR.rxandroid
-    implementation rootProject.ext.dependenciesJAR.rxjava
+    api rootProject.ext.dependenciesJAR.gson
+    api rootProject.ext.dependenciesJAR.okhttp
+    api rootProject.ext.dependenciesJAR.logging
+    api rootProject.ext.dependenciesJAR.retrofit
+    api rootProject.ext.dependenciesJAR.adapterRxjava
+    api rootProject.ext.dependenciesJAR.retrofit2Gson
+    api rootProject.ext.dependenciesJAR.rxandroid
+    api rootProject.ext.dependenciesJAR.rxjava
     implementation rootProject.ext.dependenciesJAR.appcompat
     implementation rootProject.ext.dependenciesJAR.material
     implementation rootProject.ext.dependenciesJAR.constraintlayout

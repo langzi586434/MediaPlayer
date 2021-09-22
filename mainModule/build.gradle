@@ -35,10 +35,13 @@ android {
 
 dependencies {
     implementation project(':commontModule')
+    implementation project(':utileModule')
+    implementation project(':baseModule')
     implementation rootProject.ext.dependenciesJAR.playServicesCast
     implementation rootProject.ext.dependenciesJAR.appcompat
     implementation rootProject.ext.dependenciesJAR.constraintlayout
     implementation rootProject.ext.dependenciesJAR.material
+    implementation project(':httpModule')
     testImplementation rootProject.ext.dependenciesJAR.junit
     androidTestImplementation rootProject.ext.dependenciesJAR.extJunit
     androidTestImplementation rootProject.ext.dependenciesJAR.espressoCore

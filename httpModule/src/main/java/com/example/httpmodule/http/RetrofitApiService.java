@@ -8,8 +8,8 @@ import rx.Observer;
 
 public interface RetrofitApiService {
 
-    String BASE_URL = "http://xxxxxxxxxx/";//服务器地址
+    String BASE_URL = "https://www.6tennis.com/";//服务器地址
 
-    @GET()
+    @GET("api/getSchedule?type=0&pageNumber=1&pageSize=20")
     Observable<JsonObject> requestWeather();
 }
