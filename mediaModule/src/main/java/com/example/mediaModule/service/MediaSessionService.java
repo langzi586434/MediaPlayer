@@ -14,7 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.media.MediaBrowserServiceCompat;
 import com.example.commontmodule.commit.Comment;
-import com.example.commontmodule.commit.FilesCom;
+import com.example.utilemodule.FilesUtile;
 import com.example.utilemodule.utils.VMFileUtils;
 import java.io.File;
 import java.io.IOException;
@@ -226,7 +226,7 @@ public class MediaSessionService extends MediaBrowserServiceCompat implements Me
                     .setState(PlaybackStateCompat.STATE_SKIPPING_TO_NEXT, 0, 1.0f)
                     .build();
             mediaSession.setPlaybackState(stateCompat);
-            ArrayList<File> sdFiles = FilesCom.getInstance().getSdFiles();
+            ArrayList<File> sdFiles = FilesUtile.getInstance().getSdFiles();
             if (index >= sdFiles.size() - 1) {
                 index = 0;
             } else {
@@ -243,7 +243,7 @@ public class MediaSessionService extends MediaBrowserServiceCompat implements Me
                     .setState(PlaybackStateCompat.STATE_SKIPPING_TO_PREVIOUS, 0, 1.0f)
                     .build();
             mediaSession.setPlaybackState(stateCompat);
-            ArrayList<File> sdFiles = FilesCom.getInstance().getSdFiles();
+            ArrayList<File> sdFiles = FilesUtile.getInstance().getSdFiles();
             if (index == 0) {
                 index = sdFiles.size() - 1;
             } else {
@@ -286,7 +286,7 @@ public class MediaSessionService extends MediaBrowserServiceCompat implements Me
                 index = extras.getInt("index");
             //我们可以保存当前播放音乐的信息，以便客户端刷新UI
             mediaSession.setMetadata(new MediaMetadataCompat.Builder()
-                    .putString(MediaMetadataCompat.METADATA_KEY_TITLE, FilesCom.getInstance().getSdFiles().get(index).getName())
+                    .putString(MediaMetadataCompat.METADATA_KEY_TITLE, FilesUtile.getInstance().getSdFiles().get(index).getName())
                     .build()
             );
         } catch (IOException e) {

@@ -16,17 +16,16 @@ import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.viewpager.widget.ViewPager;
 
 import com.example.basemodule.base.BaseActivity;
 import com.example.basemodule.base.BaseBroadcastReceiver;
 import com.example.basemodule.baseAdapter.RBaseAdapter;
 import com.example.commontmodule.commit.Comment;
-import com.example.commontmodule.commit.FilesCom;
 import com.example.mediaModule.R;
 import com.example.mediaModule.adapter.PlayAdapter;
 import com.example.mediaModule.play.MusicPlayerActivity;
 import com.example.mediaModule.play.VideoPlayerActivity;
+import com.example.utilemodule.FilesUtile;
 import com.example.utilemodule.LogToot;
 import com.example.utilemodule.utils.VMFileUtils;
 
@@ -60,7 +59,7 @@ public class MainActivity extends BaseActivity implements RBaseAdapter.OnAdapter
                     type = Comment.VIDEO;
                 }
                 initFiles();
-                ArrayList<File> sdFiles = FilesCom.getInstance().getSdFiles();
+                ArrayList<File> sdFiles = FilesUtile.getInstance().getSdFiles();
                 playAdapter.changeData(sdFiles);
             }
 
@@ -80,7 +79,7 @@ public class MainActivity extends BaseActivity implements RBaseAdapter.OnAdapter
                     pathType = Comment.DATA_USB;
                 }
                 initFiles();
-                ArrayList<File> sdFiles = FilesCom.getInstance().getSdFiles();
+                ArrayList<File> sdFiles = FilesUtile.getInstance().getSdFiles();
                 playAdapter.changeData(sdFiles);
             }
 
@@ -118,7 +117,7 @@ public class MainActivity extends BaseActivity implements RBaseAdapter.OnAdapter
     private void initFiles() {
         if (lacksPermission()) {
             sdFiles = VMFileUtils.getUSBorSDFiles(pathType, type);
-            FilesCom.getInstance().setSdFiles(sdFiles);
+            FilesUtile.getInstance().setSdFiles(sdFiles);
         } else {
             initPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE});
         }

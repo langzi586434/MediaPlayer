@@ -9,7 +9,7 @@ import com.example.basemodule.base.mvp.v.HBaseActivity;
 public class MainBActivity extends HBaseActivity<Presenter> implements Contract.View {
     @Override
     protected void initPresenter() {
-        mPresenter = new Presenter(this);
+        mPresenter = new Presenter(this,this);
     }
 
     @Override
@@ -50,6 +50,11 @@ public class MainBActivity extends HBaseActivity<Presenter> implements Contract.
 
     @Override
     public void onSuccess() {
+
+    }
+
+    @Override
+    public void onConnectUpData() {
 
     }
 }

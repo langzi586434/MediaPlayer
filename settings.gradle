@@ -1,4 +1,4 @@
-rootProject.name = "My Application"
+rootProject.name = "APP"
 include ':app'
 include ':mainModule'
 include ':baseModule'

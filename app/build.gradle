@@ -16,13 +16,44 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
+
     buildTypes {
         release {
-            minifyEnabled false
-
+            //是否优化zip
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            //启用代码混淆
+            minifyEnabled true
+            //防止方法数量超过65536导致错误
+            multiDexEnabled = true
+            //混淆规则配置文件
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+             buildConfigField "Boolean", "DEBUG_MODE", 'false'
+        }
+        debug {
+            shrinkResources false
+            minifyEnabled false
+            zipAlignEnabled true
+            multiDexEnabled = true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+             buildConfigField "Boolean", "DEBUG_MODE", 'true'
         }
     }
+//    applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            variant.packageApplicationProvider.get().outputDirectory = new File(project.rootDir.absolutePath + "/apk")
+//            def fileName
+//            if (output.name == 'debug') {
+//                fileName = "AppName_v${defaultConfig.versionName}_c${defaultConfig.versionCode}_${"Test"}_${releaseTime()}.apk"
+//            } else {
+//                fileName = "AppName_v${defaultConfig.versionName}_c${defaultConfig.versionCode}_${output.name}-${releaseTime()}.apk"
+//            }
+//            output.outputFileName = fileName
+//        }
+//    }
+
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

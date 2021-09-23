@@ -1,20 +1,20 @@
-package com.example.commontmodule.commit;
+package com.example.utilemodule;
 
 import android.util.Log;
 
 import java.io.File;
 import java.util.ArrayList;
 
-public class FilesCom {
+public class FilesUtile {
     private static final String TAG = "FilesCom";
     private ArrayList<File> sdFiles;
-    private static FilesCom filesCom;
+    private static FilesUtile filesCom;
 
-    public static FilesCom getInstance() {
+    public static FilesUtile getInstance() {
         if (filesCom == null) {
-            synchronized (FilesCom.class) {
+            synchronized (FilesUtile.class) {
                 if (null == filesCom) {
-                    filesCom = new FilesCom();
+                    filesCom = new FilesUtile();
                 }
             }
         }
@@ -27,9 +27,13 @@ public class FilesCom {
     }
 
     public void setSdFiles(ArrayList<File> files) {
-        if (null == sdFiles) sdFiles = new ArrayList<>();else sdFiles.clear();
+        if (null == sdFiles) {
+            sdFiles = new ArrayList<>();
+        } else {
+            sdFiles.clear();
+        }
         sdFiles.addAll(files);
-        Log.e(TAG, "setSdFiles: "+ sdFiles.size() );
+        Log.e(TAG, "setSdFiles: " + sdFiles.size());
     }
 
     public void onFilesDestroy() {

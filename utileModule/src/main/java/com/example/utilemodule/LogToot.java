@@ -7,7 +7,7 @@ import static com.example.commontmodule.commit.Comment.IS_DEBUG;
 public class LogToot {
     private final static boolean isDebug = IS_DEBUG;
 
-    private static final String TAG = LogToot.class.getName();
+    private static final String TAG = LogToot.class.getSimpleName();
 
     public static void i(String msg) {
         if (isDebug)

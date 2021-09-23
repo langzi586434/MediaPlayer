@@ -24,6 +24,7 @@ public class Comment {
     @SuppressLint("SdCardPath")
     public static final String MUSIC_PATH = "/sdcard/Music";
     public static  String USB_PATH = "";
+    public static  String NET_TYPE = "";
     public static  String PLAYING_PATH = "";
 
 }

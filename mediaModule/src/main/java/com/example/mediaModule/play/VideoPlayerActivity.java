@@ -19,8 +19,8 @@ import androidx.annotation.NonNull;
 
 import com.example.commontmodule.commit.Comment;
 import com.example.basemodule.base.BaseActivity;
-import com.example.commontmodule.commit.FilesCom;
 import com.example.mediaModule.R;
+import com.example.utilemodule.FilesUtile;
 import com.example.utilemodule.utils.MediaInfoUtils;
 import com.example.utilemodule.utils.VMFileUtils;
 
@@ -187,7 +187,7 @@ public class VideoPlayerActivity extends BaseActivity implements MediaPlayer.OnC
                     .setState(PlaybackStateCompat.STATE_SKIPPING_TO_NEXT, 0, 1.0f)
                     .build();
             mediaSession.setPlaybackState(stateCompat);
-            ArrayList<File> sdFiles = FilesCom.getInstance().getSdFiles();
+            ArrayList<File> sdFiles = FilesUtile.getInstance().getSdFiles();
             if (index >= sdFiles.size() - 1) {
                 index = 0;
             } else {
@@ -213,7 +213,7 @@ public class VideoPlayerActivity extends BaseActivity implements MediaPlayer.OnC
                     .setState(PlaybackStateCompat.STATE_SKIPPING_TO_PREVIOUS, 0, 1.0f)
                     .build();
             mediaSession.setPlaybackState(stateCompat);
-            ArrayList<File> sdFiles = FilesCom.getInstance().getSdFiles();
+            ArrayList<File> sdFiles = FilesUtile.getInstance().getSdFiles();
             if (index == 0) {
                 index = sdFiles.size() - 1;
             } else {
@@ -262,7 +262,7 @@ public class VideoPlayerActivity extends BaseActivity implements MediaPlayer.OnC
                             bundle.putLong(Comment.SEEK_TO_CURRENT_POSITION, mPlayVideo.getCurrentPosition());
                             bundle.putLong(Comment.SEEK_TO_DURATION, mPlayVideo.getDuration());
                             Log.d(TAG, "Duration: " + mPlayVideo.getDuration() + "  CurrentPosition" + mPlayVideo.getCurrentPosition());
-                            bundle.putString(Comment.PLAYING_NAME, FilesCom.getInstance().getSdFiles().get(index).getName());
+                            bundle.putString(Comment.PLAYING_NAME, FilesUtile.getInstance().getSdFiles().get(index).getName());
                             mediaSession.sendSessionEvent(Comment.SEEK_TO_EVENT, bundle);
                         }
                         Thread.sleep(1000);
