@@ -1,4 +1,4 @@
-package com.example.utilemodule.utils;
+package com.example.utilemodule;
 
 //跟App相关的辅助类
 

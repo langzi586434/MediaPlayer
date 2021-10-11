@@ -1,8 +1,12 @@
 package com.example.basemodule.view;
 
 import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.Rect;
+import android.graphics.RectF;
 import android.hardware.Camera;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -24,12 +28,18 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
     private Camera.Parameters parameters;
     private int width;
     private int height;
-    String dir = "storage/emulated/0/DCIM/Picture/";
+    private Rect rect;
+    String picturePath = "storage/emulated/0/DCIM/Picture/";
+    String moviePath = "storage/emulated/0/DCIM/Movie/";
+    private Point point = new Point();
 
-    private void initDisplay() {
-        width = mContext.getDisplay().getWidth();
-        height = mContext.getDisplay().getWidth();
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+        width = right;
+        height = bottom;
     }
+
 
     public CameraPreview(Context context) {
         super(context);
@@ -84,14 +94,14 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
-                File file = new File(dir);
+                File file = new File(picturePath);
                 FileOutputStream fileOutputStream = null;
                 //文件夹不存在，则创建它
                 if (!file.exists()) {
                     file.mkdir();
                 }
                 try {
-                    fileOutputStream = new FileOutputStream(new File(dir + "/" + System.currentTimeMillis() + ".png"));
+                    fileOutputStream = new FileOutputStream(new File(picturePath + "/" + System.currentTimeMillis() + ".png"));
                     fileOutputStream.write(data);
                     fileOutputStream.flush();
                     fileOutputStream.close();
@@ -126,7 +136,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         List<Camera.Size> list = parameters.getSupportedPictureSizes();
         int size = 0;
         for (int i = 0; i < list.size() - 1; i++) {
-            if (list.get(i).height >= height ) {
+            if (list.get(i).height >= height) {
                 //完美匹配
                 size = i;
                 break;
@@ -141,14 +151,14 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         //设置照相机参数
         mCamera.setParameters(parameters);
     }
-    private void ReleaseCamera()
-    {
-        if(mCamera != null)
-        {
+
+    private void ReleaseCamera() {
+        if (mCamera != null) {
             mCamera.release();
             mCamera = null;
         }
     }
+
     private void initCamera() {
         ReleaseCamera();
         mCamera = Camera.open(0);
@@ -160,7 +170,6 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         } catch (IOException e) {
             e.printStackTrace();
         }
-        initDisplay();
         initParameters();
         setPictureSize();
         setFocusMode();
@@ -188,7 +197,17 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         mCamera = null;
     }
 
-   private Point point = new Point();
+    /**
+     * 释放相机资源
+     */
+    private void releaseCamera() {
+        if (mCamera != null) {
+            mCamera.setPreviewCallback(null);
+            mCamera.stopPreview();
+            mCamera.release();
+            mCamera = null;
+        }
+    }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -229,11 +248,9 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         int top = point.y - 300;
         int right = point.x + 300;
         int bottom = point.y + 300;
-        left = Math.max(left, -1000);
-        top = Math.max(top, -1000);
-        right = Math.min(right, 1000);
-        bottom = Math.min(bottom, 1000);
-        areas.add(new Camera.Area(new Rect(left, top, right, bottom), 100));
+        rect = new Rect(left, top, right, bottom);
+
+        areas.add(new Camera.Area(rect, 100));
         parameters.setFocusAreas(areas);
         try {
             mCamera.setParameters(parameters);
@@ -247,6 +264,12 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         return focus(callback);
     }
 
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+
+    }
+
     private boolean focus(Camera.AutoFocusCallback callback) {
         try {
             mCamera.autoFocus(callback);
@@ -256,7 +279,6 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         }
         return true;
     }
-
 
     static class FocusThread extends Thread {
         Camera mCamera;

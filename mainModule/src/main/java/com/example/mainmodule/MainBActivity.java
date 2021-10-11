@@ -1,60 +1,31 @@
 package com.example.mainmodule;
 
 
-import android.util.Log;
+import android.Manifest;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
+import android.widget.FrameLayout;
 
-import com.example.basemodule.base.mvp.v.HBaseActivity;
+import com.example.basemodule.base.BaseActivity;
+import com.example.basemodule.base.BaseCameraActivity;
 
-public class MainBActivity extends HBaseActivity<Presenter> implements Contract.View {
-    @Override
-    protected void initPresenter() {
-        mPresenter = new Presenter(this,this);
-    }
 
-    @Override
-    public void onClick(View view) {
-        super.onClick(view);
-        mPresenter.getData();
-    }
+public class MainBActivity extends BaseActivity {
+
 
     @Override
     protected void initView() {
+    }
+
+    @Override
+    protected void initData() {
 
     }
 
     @Override
     protected int setLayout() {
-        return R.layout.activity_main;
-    }
-
-    @Override
-    public void showLoading() {
-
-    }
-
-    @Override
-    public void dismissLoading() {
-
-    }
-
-    @Override
-    public void onFail(Throwable ex, String code, String msg) {
-        Log.d("TAG", "onFail: "+msg);
-    }
-
-    @Override
-    public void onNetError() {
-
-    }
-
-    @Override
-    public void onSuccess() {
-
-    }
-
-    @Override
-    public void onConnectUpData() {
-
+        return R.layout.activityb;
     }
 }

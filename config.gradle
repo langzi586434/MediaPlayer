@@ -3,8 +3,8 @@ ext {
     versions = [
             buildToolsVersion: "30.0.3",
             compileSdkVersion: 30,
-            minSdkVersion    : 28,
-            targetSdkVersion : 30,
+            minSdkVersion    : 21,
+            targetSdkVersion : 28,
             versionCode      : 1,
             versionName      : "1.0.0",
             applicationId    : "com.example.myapplication"
@@ -52,7 +52,7 @@ ext {
 
             "playServicesCast": "com.google.android.gms:play-services-cast:${JarVersions["playServicesCastVersion"]}",
             "appcompat"       : "androidx.appcompat:appcompat:${JarVersions["appcompatVerison"]}",
-            "material"        : "com.google.android.material:material:${JarVersions["appcompatVerison"]}",
+            "material"        : "com.google.android.material:material:${JarVersions["materialVerison"]}",
             "junit"           : "junit:junit:${JarVersions["junitVerison"]}",
             "extJunit"        : "androidx.test.ext:junit:${JarVersions["extjunitVerison"]}",
             "espressoCore"    : "androidx.test.espresso:espresso-core:${JarVersions["espressoVerison"]}",

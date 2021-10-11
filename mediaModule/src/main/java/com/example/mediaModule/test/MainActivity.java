@@ -27,7 +27,7 @@ import com.example.mediaModule.play.MusicPlayerActivity;
 import com.example.mediaModule.play.VideoPlayerActivity;
 import com.example.utilemodule.FilesUtile;
 import com.example.utilemodule.LogToot;
-import com.example.utilemodule.utils.VMFileUtils;
+import com.example.utilemodule.VMFileUtils;
 
 
 import java.io.File;

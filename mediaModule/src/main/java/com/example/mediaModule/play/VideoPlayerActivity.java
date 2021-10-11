@@ -21,8 +21,8 @@ import com.example.commontmodule.commit.Comment;
 import com.example.basemodule.base.BaseActivity;
 import com.example.mediaModule.R;
 import com.example.utilemodule.FilesUtile;
-import com.example.utilemodule.utils.MediaInfoUtils;
-import com.example.utilemodule.utils.VMFileUtils;
+import com.example.utilemodule.MediaInfoUtils;
+import com.example.utilemodule.VMFileUtils;
 
 import java.io.File;
 import java.util.ArrayList;

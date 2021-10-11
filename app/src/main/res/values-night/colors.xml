@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Toolbar的背景颜色-->
+    <!--    <item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--StatusBar的颜色-->
+    <!--    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--主标题的字体颜色-->
+    <!--    <item name="android:textColorPrimary">@color/textColorPrimary</item>-->
+    <!--控制元件的默认状态颜色-->
+    <!--    <item name="android:colorControlNormal">@color/colorControlNormal</item>-->
+    <!--控制元件在选中状态的颜色-->
+    <!--    <item name="colorAccent">@color/colorAccent</item>-->
+    <!--Activity的背景颜色-->
+    <!--    <item name="android:windowBackground">@color/windowBackground</item>-->
+    <color name="colorPrimary">#ff000000</color>
+    <color name="colorPrimaryDark">#123456</color>
+    <color name="textColorPrimary">#ffffffff</color>
+    <color name="colorControlNormal">#ff00000f</color>
+    <color name="colorAccent">#fff00000</color>
+    <color name="windowBackground">#a00000</color>
+</resources>

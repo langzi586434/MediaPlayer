@@ -1,4 +1,4 @@
-package com.example.utilemodule.utils;
+package com.example.utilemodule;
 
 import android.media.MediaExtractor;
 import android.media.MediaFormat;

@@ -25,7 +25,7 @@ public class AppManager {
      */
     public static AppManager getInstance() {
         if (null == appManager) {
-            synchronized (AppManager.class){
+            synchronized (AppManager.class) {
                 if (null == appManager) {
                     appManager = new AppManager();
                 }
@@ -93,13 +93,7 @@ public class AppManager {
      * 退出应用程序
      */
     public void appExit() {
-        try {
-            finishAllActivity();
-            System.exit(0);
-            android.os.Process.killProcess(android.os.Process.myPid());
-
-        } catch (Exception e) {
-        }
+        finishAllActivity();
     }
 
     /**
@@ -113,7 +107,8 @@ public class AppManager {
             activity = null;
         }
     }
-    public int getActivityCount(){
+
+    public int getActivityCount() {
         return activityStack.size();
     }
 
