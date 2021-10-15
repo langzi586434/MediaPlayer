@@ -37,5 +37,10 @@ dependencies {
     implementation project(':commontModule')
     implementation project(':utileModule')
     implementation project(':mylibrary')
-
+    implementation ('com.android.support:appcompat-v7:26.+'){
+        exclude group: 'com.android.support',module: 'support-fragment'
+        exclude group: 'com.android.support',module: 'support-core-utils'
+        exclude group: 'com.android.support',module: 'support-core-ui'
+        exclude group: 'com.android.support',module: 'support-compat'
+    }
 }

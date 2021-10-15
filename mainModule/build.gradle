@@ -36,7 +36,6 @@ android {
 dependencies {
     implementation project(':commontModule')
     implementation project(':utileModule')
-
     implementation project(':httpModule')
     implementation project(':mylibrary')
 }

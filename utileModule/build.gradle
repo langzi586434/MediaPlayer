@@ -26,7 +26,5 @@ android {
 }
 
 dependencies {
-    implementation project(':mylibrary')
-
     implementation project(':commontModule')
 }

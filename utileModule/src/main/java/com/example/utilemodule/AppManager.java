@@ -3,7 +3,6 @@ package com.example.utilemodule;
 import android.app.Activity;
 import android.util.Log;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Iterator;
 import java.util.Stack;

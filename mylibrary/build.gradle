@@ -33,6 +33,9 @@ android {
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':httpModule')
+    api project(':utileModule')
+    api project(':commontModule')
     api rootProject.ext.dependenciesJAR.playServicesCast
     api rootProject.ext.dependenciesJAR.appcompat
     api rootProject.ext.dependenciesJAR.material

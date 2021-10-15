@@ -27,7 +27,6 @@ android {
 dependencies {
     implementation project(':commontModule')
     implementation project(':utileModule')
-    implementation project(':mylibrary')
     api rootProject.ext.dependenciesJAR.gson
     api rootProject.ext.dependenciesJAR.okhttp
     api rootProject.ext.dependenciesJAR.logging
