@@ -15,21 +15,22 @@ ext {
             mediaApplicationID  : "com.example.mediaModel"
     ]
     JarVersions = [
-            appcompatVerison       : "1.2.0",
-            materialVerison        : "1.2.1",
-            junitVerison           : "4.13.2",
-            extjunitVerison        : "1.1.2",
-            espressoVerison        : "3.3.0",
+             appcompatVerison       : "1.2.0",
+             materialVerison        : "1.2.1",
+             junitVerison           : "4.13.2",
+             extjunitVerison        : "1.1.2",
+             espressoVerison        : "3.3.0",
             constraintlayoutVersion: "2.0.1",
-            gsonVersion            : "2.8.0",
-            okhttpVersion          : "3.9.1",
-            loggingVersion         : "3.9.1",
-            retrofitVersion        : "2.3.0",
-            adapterRxjavaVersion   : "2.1.0",
-            retrofit2GsonVersion   : "2.1.0",
-            rxandroidVersion       : "1.2.1",
-            rxjavaVersion          : "1.2.1",
-            playServicesCastVersion: "19.0.0"
+             gsonVersion            : "2.8.0",
+             okhttpVersion          : "3.9.1",
+             loggingVersion         : "3.9.1",
+             retrofitVersion        : "2.3.0",
+             adapterRxjavaVersion   : "2.1.0",
+             retrofit2GsonVersion   : "2.1.0",
+             rxandroidVersion       : "1.2.1",
+             rxjavaVersion          : "1.2.1",
+             playServicesCastVersion: "19.0.0",
+             GlideVersion           : "4.5.0"
     ]
     dependenciesJAR = [
             //(gson生成和解析库)
@@ -47,9 +48,8 @@ ext {
             "rxandroid"       : "io.reactivex:rxandroid:${JarVersions["rxandroidVersion"]}",
             //(一种帮助你做异步的框架. 类似于 AsyncTask. 但其灵活性和扩展性远远强于前者. 从能力上讲, 如果说 AsycnTask 是 DOS 操作系统, RxJava 是 Window 操作系统。)
             "rxjava"          : "io.reactivex:rxjava:${JarVersions["rxjavaVersion"]}",
-
-
-
+            "Glide"           : "com.github.bumptech.glide:glide:${JarVersions["GlideVersion"]}",
+            "GlideAnnotationProcessor"           : "'com.github.bumptech.glide:compiler:${JarVersions["GlideVersion"]}",
             "playServicesCast": "com.google.android.gms:play-services-cast:${JarVersions["playServicesCastVersion"]}",
             "appcompat"       : "androidx.appcompat:appcompat:${JarVersions["appcompatVerison"]}",
             "material"        : "com.google.android.material:material:${JarVersions["materialVerison"]}",

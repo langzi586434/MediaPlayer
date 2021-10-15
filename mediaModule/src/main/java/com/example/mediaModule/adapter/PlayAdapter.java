@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.example.basemodule.baseAdapter.RBaseAdapter;
+import com.example.mylibrary.baseAdapter.RBaseAdapter;
 import com.example.mediaModule.R;
 
 import java.io.File;

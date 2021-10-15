@@ -1,10 +1,9 @@
 package com.example.mainmodule;
 
 import android.content.Intent;
-import android.util.Log;
 import android.view.View;
 
-import com.example.basemodule.base.BaseActivity;
+import com.example.mylibrary.base.BaseActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -16,8 +15,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     protected void initData() {
-
-
     }
 
     @Override

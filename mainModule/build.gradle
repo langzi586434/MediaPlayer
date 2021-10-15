@@ -36,21 +36,7 @@ android {
 dependencies {
     implementation project(':commontModule')
     implementation project(':utileModule')
-    implementation project(':baseModule')
-    def camerax_version = "1.0.0-beta03"
-// CameraX core library using camera2 implementation
-    implementation "androidx.camera:camera-camera2:$camerax_version"
-// CameraX Lifecycle Library
-    implementation "androidx.camera:camera-lifecycle:$camerax_version"
-// CameraX View class
-    implementation "androidx.camera:camera-view:1.0.0-alpha10"
 
-    implementation rootProject.ext.dependenciesJAR.playServicesCast
-    implementation rootProject.ext.dependenciesJAR.appcompat
-    implementation rootProject.ext.dependenciesJAR.constraintlayout
-    implementation rootProject.ext.dependenciesJAR.material
     implementation project(':httpModule')
-    testImplementation rootProject.ext.dependenciesJAR.junit
-    androidTestImplementation rootProject.ext.dependenciesJAR.extJunit
-    androidTestImplementation rootProject.ext.dependenciesJAR.espressoCore
+    implementation project(':mylibrary')
 }

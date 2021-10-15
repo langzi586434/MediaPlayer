@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 import com.example.commontmodule.commit.Comment;
 import com.example.mediaModule.R;
-import com.example.basemodule.base.BaseMediaActivity;
+import com.example.mylibrary.base.BaseMediaActivity;
 import com.example.mediaModule.service.MediaSessionService;
 
 import java.util.List;

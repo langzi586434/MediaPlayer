@@ -65,10 +65,5 @@ dependencies {
         implementation project(":mainModule")
     }
 
-    implementation rootProject.ext.dependenciesJAR.appcompat
-    implementation rootProject.ext.dependenciesJAR.material
-    implementation rootProject.ext.dependenciesJAR.constraintlayout
-    testImplementation rootProject.ext.dependenciesJAR.junit
-    androidTestImplementation rootProject.ext.dependenciesJAR.extJunit
-    androidTestImplementation rootProject.ext.dependenciesJAR.espressoCore
+    implementation project(':mylibrary')
 }

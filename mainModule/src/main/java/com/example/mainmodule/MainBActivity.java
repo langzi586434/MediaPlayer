@@ -1,15 +1,7 @@
 package com.example.mainmodule;
 
 
-import android.Manifest;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.Button;
-import android.widget.FrameLayout;
-
-import com.example.basemodule.base.BaseActivity;
-import com.example.basemodule.base.BaseCameraActivity;
+import com.example.mylibrary.base.BaseActivity;
 
 
 public class MainBActivity extends BaseActivity {

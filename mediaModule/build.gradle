@@ -26,11 +26,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    repositories {
-        flatDir {
-            dirs 'libs'
-        }
-    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -38,15 +34,8 @@ android {
 }
 
 dependencies {
-    implementation project(':baseModule')
     implementation project(':commontModule')
     implementation project(':utileModule')
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation rootProject.ext.dependenciesJAR.playServicesCast
-    implementation rootProject.ext.dependenciesJAR.appcompat
-    implementation rootProject.ext.dependenciesJAR.material
-    implementation rootProject.ext.dependenciesJAR.constraintlayout
-    testImplementation rootProject.ext.dependenciesJAR.junit
-    androidTestImplementation rootProject.ext.dependenciesJAR.extJunit
-    androidTestImplementation rootProject.ext.dependenciesJAR.espressoCore
+    implementation project(':mylibrary')
+
 }

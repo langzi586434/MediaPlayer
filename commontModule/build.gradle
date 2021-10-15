@@ -26,11 +26,5 @@ android {
 }
 
 dependencies {
-    implementation rootProject.ext.dependenciesJAR.playServicesCast
-    implementation rootProject.ext.dependenciesJAR.appcompat
-    implementation rootProject.ext.dependenciesJAR.constraintlayout
-    implementation rootProject.ext.dependenciesJAR.material
-    testImplementation rootProject.ext.dependenciesJAR.junit
-    androidTestImplementation rootProject.ext.dependenciesJAR.extJunit
-    androidTestImplementation rootProject.ext.dependenciesJAR.espressoCore
+    implementation project(':mylibrary')
 }

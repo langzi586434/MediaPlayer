@@ -9,7 +9,8 @@ android {
         targetSdkVersion rootProject.ext.versions.targetSdkVersion
         versionCode rootProject.ext.versions.versionCode
         versionName rootProject.ext.versions.versionName
-
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -18,6 +19,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -25,9 +32,11 @@ android {
 }
 
 dependencies {
-    implementation project(':commontModule')
-    implementation project(':utileModule')
-    implementation project(':mylibrary')
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api rootProject.ext.dependenciesJAR.playServicesCast
+    api rootProject.ext.dependenciesJAR.appcompat
+    api rootProject.ext.dependenciesJAR.material
+    api rootProject.ext.dependenciesJAR.Glide
     api rootProject.ext.dependenciesJAR.gson
     api rootProject.ext.dependenciesJAR.okhttp
     api rootProject.ext.dependenciesJAR.logging
@@ -36,10 +45,9 @@ dependencies {
     api rootProject.ext.dependenciesJAR.retrofit2Gson
     api rootProject.ext.dependenciesJAR.rxandroid
     api rootProject.ext.dependenciesJAR.rxjava
-    implementation rootProject.ext.dependenciesJAR.appcompat
-    implementation rootProject.ext.dependenciesJAR.material
-    implementation rootProject.ext.dependenciesJAR.constraintlayout
-    testImplementation rootProject.ext.dependenciesJAR.junit
-    androidTestImplementation rootProject.ext.dependenciesJAR.extJunit
-    androidTestImplementation rootProject.ext.dependenciesJAR.espressoCore
+    api rootProject.ext.dependenciesJAR.constraintlayout
+
+    testApi rootProject.ext.dependenciesJAR.junit
+    androidTestApi rootProject.ext.dependenciesJAR.extJunit
+    androidTestApi rootProject.ext.dependenciesJAR.espressoCore
 }

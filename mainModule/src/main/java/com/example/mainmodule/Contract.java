@@ -1,6 +1,6 @@
 package com.example.mainmodule;
 
-import com.example.basemodule.base.mvp.v.IView;
+import com.example.mylibrary.base.mvp.v.IView;
 
 
 public class Contract {

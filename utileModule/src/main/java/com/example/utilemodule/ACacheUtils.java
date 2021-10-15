@@ -57,8 +57,8 @@ public class ACacheUtils {
     public static final int TIME_DAY = TIME_HOUR * 24;
     private static final int MAX_SIZE = 1000 * 1000 * 100; // 100 mb-->原来50M
     private static final int MAX_COUNT = Integer.MAX_VALUE; // 不限制存放数据的数量
-    private static Map<String, ACacheUtils> mInstanceMap = new HashMap<String, ACacheUtils>();
-    private ACacheManager mCache;
+    private static final Map<String, ACacheUtils> mInstanceMap = new HashMap<String, ACacheUtils>();
+    private final ACacheManager mCache;
 
     public static ACacheUtils get(Context ctx) {
         return get(ctx, "ACache");

@@ -17,9 +17,9 @@ import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.example.basemodule.base.BaseActivity;
-import com.example.basemodule.base.BaseBroadcastReceiver;
-import com.example.basemodule.baseAdapter.RBaseAdapter;
+import com.example.mylibrary.base.BaseActivity;
+import com.example.mylibrary.base.BaseBroadcastReceiver;
+import com.example.mylibrary.baseAdapter.RBaseAdapter;
 import com.example.commontmodule.commit.Comment;
 import com.example.mediaModule.R;
 import com.example.mediaModule.adapter.PlayAdapter;

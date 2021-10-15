@@ -18,7 +18,7 @@ import android.widget.VideoView;
 import androidx.annotation.NonNull;
 
 import com.example.commontmodule.commit.Comment;
-import com.example.basemodule.base.BaseActivity;
+import com.example.mylibrary.base.BaseActivity;
 import com.example.mediaModule.R;
 import com.example.utilemodule.FilesUtile;
 import com.example.utilemodule.MediaInfoUtils;
